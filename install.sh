@@ -29,5 +29,6 @@ echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 
 echo -e $SCRIPT > $SCRIPT_PATH
 echo -e $SERVICE > $SERVICE_PATH
+chmod +x $SCRIPT_PATH
 systemctl start fn-lock-toggle
 systemctl enable fn-lock-toggle
